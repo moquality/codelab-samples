@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "mocha": "^6.2.0",
+    "wd": "^1.11.4"
+  }
+}
