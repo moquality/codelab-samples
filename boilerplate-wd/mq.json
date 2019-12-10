@@ -1,0 +1,7 @@
+{
+  "env": "node",
+  "project": "projectId",
+  "app": "platformName:packageName",
+  "pre": "yarn",
+  "run": "yarn test"
+}
