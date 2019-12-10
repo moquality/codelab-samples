@@ -1,5 +1,7 @@
 {
   "env": "node",
-  "cwd": "test",
+  "project": "sample",
+  "app": "ios:com.example.apple-samplecode.UIKitCatalog",
+  "pre": "yarn",
   "run": "yarn test"
 }

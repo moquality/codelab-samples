@@ -1,5 +1,7 @@
 {
   "env": "node",
-  "cwd": "test",
+  "project": "sample",
+  "app": "android:io.appium.android.apis",
+  "pre": "yarn",
   "run": "yarn test"
 }

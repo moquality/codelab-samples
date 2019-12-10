@@ -1,5 +1,7 @@
 {
   "env": "node",
-  "cwd": "test",
+  "project": "sample",
+  "app": "android:com.google.samples.apps.iosched",
+  "pre": "yarn",
   "run": "yarn test"
 }
