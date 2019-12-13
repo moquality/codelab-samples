@@ -2,6 +2,6 @@
   "env": "node",
   "project": "projectId",
   "app": "platformName:packageName",
-  "pre": "yarn",
-  "run": "yarn test"
+  "pre": "npm install",
+  "run": "npm run test"
 }

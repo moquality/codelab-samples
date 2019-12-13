@@ -2,6 +2,6 @@
   "env": "node",
   "project": "sample",
   "app": "android:com.shauvik.calc",
-  "pre": "yarn",
-  "run": "yarn test"
+  "pre": "npm install",
+  "run": "npm run test"
 }
