@@ -7,27 +7,21 @@ describe('Test', function() {
 	})
 
 	before(async () => {
-		return driver.init({
+		await driver.init({
 			platformName: 'android',
 			app: 'https://storage.googleapis.com/mq.link/codelab/google_io_19.apk',
 			deviceName: 'Device',
 			automationName: 'UiAutomator2',
-			autoLaunch: false,
 			appWaitActivity: '*',
 		})
 	})
 
 	after(async () => {
-		await driver.closeApp()
-		return await driver.quit()
+		await driver.quit()
 	})
 
-	it('Launch App', async () => {
-		await driver.launchApp()
-		let target = await driver.elementByAndroidUIAutomator(
-			'new UiSelector().resourceId("com.google.samples.apps.iosched:id/get_started")',
-		)
-		await target.click()
+	it('Get Started', async () => {
+		await driver.elementByAndroidUIAutomator('new UiSelector().resourceId("com.google.samples.apps.iosched:id/get_started")').then(target => target.click())
 	})
 
 	it('Swipe on Home Screen', async () => {
@@ -44,39 +38,7 @@ describe('Test', function() {
 	})
 
 	it('Check Schedule', async () => {
-		let target = await driver.elementByAndroidUIAutomator('new UiSelector().className("android.widget.ImageButton")')
-		await target.click()
-
-		target = await driver.elementByAndroidUIAutomator(
-			'new UiSelector().resourceId("com.google.samples.apps.iosched:id/design_menu_item_text").text("Schedule")',
-		)
-		await target.click()
-
-		target = await driver.elementByAndroidUIAutomator('new UiSelector().resourceId("android:id/button1")')
-		await target.click()
-
-		target = await driver.elementByAndroidUIAutomator('new UiSelector().resourceId("android:id/title").text("May 8")')
-		await target.click()
-
-		target = await driver.elementByAndroidUIAutomator('new UiSelector().resourceId("android:id/title").text("May 9")')
-		await target.click()
-
-		target = await driver.elementByAndroidUIAutomator('new UiSelector().resourceId("android:id/title").text("May 7")')
-		await target.click()
-
-		target = await driver.elementByAndroidUIAutomator(
-			'new UiSelector().resourceId("com.google.samples.apps.iosched:id/title").text("Google Keynote")',
-		)
-		await target.click()
-
-		await driver.back()
-
-		target = await driver.elementByAndroidUIAutomator('new UiSelector().className("android.widget.ImageButton")')
-		await target.click()
-
-		target = await driver.elementByAndroidUIAutomator(
-			'new UiSelector().resourceId("com.google.samples.apps.iosched:id/design_menu_item_text").text("Home")',
-		)
-		await target.click()
+		await driver.elementByAndroidUIAutomator('new UiSelector().className("android.widget.ImageButton")').then(target => target.click())
+		await driver.elementByAndroidUIAutomator('new UiSelector().resourceId("com.google.samples.apps.iosched:id/design_menu_item_text").text("Schedule")').then(target => target.click())
 	})
 })
