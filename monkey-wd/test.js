@@ -26,9 +26,7 @@ describe('Test', function() {
 
 	it('Monkey Test', async () => {
 		for (i = 0; i < 50; i++) {
-			await driver
-				.elementsByAndroidUIAutomator('new UiSelector().clickable(true)')
-				.then((targets) => targets[Math.floor(Math.random() * targets.length)].click())
+			await driver.execute('mq:monkey').then((target) => target.click())
 		}
 	})
 })
