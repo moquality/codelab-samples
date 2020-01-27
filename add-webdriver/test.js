@@ -11,7 +11,7 @@ describe('Test', function() {
 		logLevel: 'error',
 		capabilities: {
 			platformName: 'android',
-			app: 'https://storage.googleapis.com/mq.link/codelab/calc.apk',
+			app: 'https://mq.link/codelab/calc.apk',
 			deviceName: 'Device',
 			automationName: 'UiAutomator2',
 			autoLaunch: false,

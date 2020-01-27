@@ -9,7 +9,7 @@ describe('Test', function() {
 	before(async () => {
 		await driver.init({
 			platformName: 'android',
-			app: 'https://storage.googleapis.com/mq.link/codelab/google_io_19.apk',
+			app: 'https://mq.link/codelab/google_io_19.apk',
 			deviceName: 'Device',
 			automationName: 'UiAutomator2',
 			appWaitActivity: '*',
