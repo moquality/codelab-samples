@@ -13,8 +13,10 @@ class Testing(unittest.TestCase):
                 # 'platformVersion': '8.1',
                 'automationName': 'uiautomator2',
                 'deviceName': 'Android Emulator',
-                'app': 'path_to_apk',
-                'appWaitActivity': '*'
+                'appWaitActivity': '*',
+                'app': 'path_to_apk'
+                # TODO: Replace above with local APK file path or 
+                # a link on the internet e.g., https://mq.link/codelab/google_io_19.apk
             })
 
     def tearDown(self):
