@@ -1,7 +1,6 @@
 {
   "env": "node",
   "project": "projectId",
-  "app": "platformName:packageName",
   "pre": "npm install",
   "run": "npm run test"
 }
