@@ -21,11 +21,7 @@ describe("Test", function() {
   });
 
   it("Get Started", async () => {
-    await driver
-      .elementByAndroidUIAutomator(
-        'new UiSelector().resourceId("com.google.samples.apps.iosched:id/get_started")'
-      )
-      .then(target => target.click());
+    await driver.elementByAndroidUIAutomator('new UiSelector().resourceId("com.google.samples.apps.iosched:id/get_started")').then(target => target.click());
   });
 
   it("Swipe on Home Screen", async () => {
@@ -48,15 +44,7 @@ describe("Test", function() {
   });
 
   it("Check Schedule", async () => {
-    await driver
-      .elementByAndroidUIAutomator(
-        'new UiSelector().className("android.widget.ImageButton")'
-      )
-      .then(target => target.click());
-    await driver
-      .elementByAndroidUIAutomator(
-        'new UiSelector().resourceId("com.google.samples.apps.iosched:id/design_menu_item_text").text("Schedule")'
-      )
-      .then(target => target.click());
+    await driver.elementByAndroidUIAutomator('new UiSelector().className("android.widget.ImageButton")').then(target => target.click());
+    await driver.elementByAndroidUIAutomator('new UiSelector().resourceId("com.google.samples.apps.iosched:id/design_menu_item_text").text("Schedule")').then(target => target.click());
   });
 });
