@@ -23,11 +23,10 @@ public class AppTest {
 
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", "Device");
-        capabilities.setCapability("app", "path_to_apk"); 
-        // TODO: Replace above with local APK file path or 
-        // a link on the internet e.g., https://mq.link/codelab/google_io_19.apk
+        capabilities.setCapability("app", "path_to_apk");
         capabilities.setCapability("appWaitActivity", "*");
         capabilities.setCapability("automationName", "UiAutomator2");
+        capabilities.setCapability("autoGrantPermissions", true);
         capabilities.setCapability("fullReset", true);
 
         // Open the app.

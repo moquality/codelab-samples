@@ -1,7 +1,6 @@
 {
   "env": "node",
   "project": "projectId",
-  "app": "platformName:packageName",
   "pre": "pip install -r requirements.txt",
   "run": "python test"
 }

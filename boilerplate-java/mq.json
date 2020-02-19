@@ -1,7 +1,6 @@
 {
   "env": "node",
   "project": "projectId",
-  "app": "platformName:packageName",
   "pre": "",
   "run": "./gradlew test"
 }
