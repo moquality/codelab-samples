@@ -1,7 +1,6 @@
 {
   "env": "node",
-  "project": "pushkar36",
-  "app": "android:com.google.samples.apps.iosched",
+  "project": "sample",
   "pre": "npm install",
   "run": "npm run test"
 }
