@@ -1,7 +1,6 @@
 {
   "env": "node",
   "project": "sample",
-  "app": "ios:com.example.apple-samplecode.UIKitCatalog",
   "pre": "npm install",
   "run": "npm run test"
 }

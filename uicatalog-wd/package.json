@@ -1,9 +1,10 @@
 {
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter @moquality/mocha"
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "@moquality/mocha": "^0.0.4",
     "chai": "^4.2.0",
     "delay": "^4.3.0",
     "mocha": "^6.2.0",

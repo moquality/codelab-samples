@@ -1,7 +1,6 @@
 {
   "env": "node",
   "project": "sample",
-  "app": "android:com.shauvik.calc",
   "pre": "npm install",
   "run": "npm run test"
 }

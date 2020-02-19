@@ -1,7 +1,6 @@
 {
   "env": "node",
   "project": "sample",
-  "app": "android:io.appium.android.apis",
   "pre": "npm install",
   "run": "npm run test"
 }

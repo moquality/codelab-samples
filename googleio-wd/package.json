@@ -1,7 +1,5 @@
 {
   "scripts": {
-    "prettier": "find . -name node_modules -prune -o -iname '*.js' -exec prettier --write {} +",
-    "simple_test": "mocha",
     "test": "mocha --reporter @moquality/mocha"
   },
   "license": "UNLICENSED",

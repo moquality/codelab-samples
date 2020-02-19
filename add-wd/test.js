@@ -24,7 +24,7 @@ describe('Test', function() {
 	})
 
 	it('Launch App', async () => {
-		return await driver.launchApp()
+		await driver.launchApp()
 	})
 
 	it('Addition', async () => {
