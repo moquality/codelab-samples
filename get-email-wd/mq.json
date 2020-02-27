@@ -1,6 +1,5 @@
 {
   "env": "node",
-  "project": "sample",
   "pre": "npm install",
   "run": "npm run test"
 }

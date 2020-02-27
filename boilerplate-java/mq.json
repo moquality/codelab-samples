@@ -1,6 +1,5 @@
 {
-  "env": "node",
-  "project": "projectId",
+  "env": "java",
   "pre": "",
   "run": "./gradlew test"
 }
