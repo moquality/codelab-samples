@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "mocha --reporter @moquality/mocha"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@moquality/mocha": "0.0.4",
+    "axios": "^0.19.2",
+    "mocha": "^7.0.1",
+    "wd": "^1.12.1"
+  }
+}

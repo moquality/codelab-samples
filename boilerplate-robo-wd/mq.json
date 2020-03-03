@@ -1,0 +1,5 @@
+{
+  "env": "node",
+  "pre": "npm install",
+  "run": "npm run test"
+}
