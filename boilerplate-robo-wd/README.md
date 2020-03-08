@@ -1,1 +1,3 @@
-## Explore the Google IO 19 schedule using robo
+## Robo Testing
+
+You can create a bot that crawls through your app using this robo testing framework.
